@@ -3,90 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATRIX INTELLIGENCE CONSTRUCTOR | McKinsey-Level Reports</title>
+    <title>MATRIX INTELLIGENCE CONSTRUCTOR | McKinsey-Level Reports in 5 Minutes</title>
+    <meta name="description" content="Create professional market intelligence reports with AI-powered analysis. Strategic insights, competitive landscape, and growth opportunities delivered in days.">
+    <meta name="keywords" content="market analysis, business intelligence, competitive research, market reports, strategic insights">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/matrix-brand.css" as="style">
+    <link rel="preload" href="css/constructor-core.css" as="style">
+    <link rel="preload" href="css/quantum-effects.css" as="style">
+    <link rel="preload" href="css/responsive-constructor.css" as="style">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/matrix-brand.css">
     <link rel="stylesheet" href="css/constructor-core.css">
     <link rel="stylesheet" href="css/quantum-effects.css">
     <link rel="stylesheet" href="css/responsive-constructor.css">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/matrix-logo.png">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#00dc82">
+    <meta name="msapplication-TileColor" content="#00dc82">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MATRIX INTELLIGENCE CONSTRUCTOR">
+    <meta property="og:description" content="Create McKinsey-level market reports in 5 minutes">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/matrix-og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MATRIX INTELLIGENCE CONSTRUCTOR">
+    <meta name="twitter:description" content="AI-powered market intelligence reports">
 </head>
 <body>
     <!-- Quantum Particles Background -->
-    <div id="quantum-particles"></div>
+    <div id="quantum-particles" aria-hidden="true"></div>
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Main Constructor Container -->
-    <div class="matrix-constructor">
+    <div class="matrix-constructor" id="main-content">
         <!-- Hero Section -->
-        <section class="quantum-hero">
+        <section class="quantum-hero" role="banner">
             <div class="hero-content">
                 <div class="matrix-logo">
-                    <div class="logo-glow"></div>
+                    <div class="logo-glow" aria-hidden="true"></div>
                     <h1>MATRIX INTELLIGENCE</h1>
                     <span class="logo-subtitle">CONSTRUCTOR</span>
                 </div>
                 <p class="hero-tagline">Create McKinsey-level reports in 5 minutes</p>
-                <div class="cta-pulse-button" id="start-constructor">
+                <div class="cta-pulse-button" id="start-constructor" role="button" tabindex="0" aria-label="Start creating your market intelligence report">
                     <span>🎯 START CREATION</span>
-                    <div class="pulse-effect"></div>
+                    <div class="pulse-effect" aria-hidden="true"></div>
+                </div>
+                
+                <!-- Trust indicators -->
+                <div class="trust-indicators" aria-label="Trust indicators">
+                    <div class="trust-item">✓ 200+ Data Sources</div>
+                    <div class="trust-item">✓ AI-Powered Analysis</div>
+                    <div class="trust-item">✓ Confidential & Secure</div>
                 </div>
             </div>
         </section>
 
         <!-- 3-Step Constructor -->
-        <section class="constructor-flow" id="constructor-section" style="display: none;">
+        <section class="constructor-flow" id="constructor-section" style="display: none;" role="main" aria-label="Report creation steps">
             <!-- Progress Indicator -->
-            <div class="construction-progress">
+            <div class="construction-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Progress through report creation steps">
                 <div class="progress-steps">
-                    <div class="step-indicator active" data-step="1">
-                        <span class="step-number">1</span>
+                    <div class="step-indicator active" data-step="1" role="listitem">
+                        <span class="step-number" aria-hidden="true">1</span>
                         <span class="step-label">Request</span>
                     </div>
-                    <div class="step-indicator" data-step="2">
-                        <span class="step-number">2</span>
+                    <div class="step-indicator" data-step="2" role="listitem">
+                        <span class="step-number" aria-hidden="true">2</span>
                         <span class="step-label">Depth</span>
                     </div>
-                    <div class="step-indicator" data-step="3">
-                        <span class="step-number">3</span>
+                    <div class="step-indicator" data-step="3" role="listitem">
+                        <span class="step-number" aria-hidden="true">3</span>
                         <span class="step-label">Preview</span>
                     </div>
                 </div>
                 <div class="progress-bar">
-                    <div class="progress-fill" data-progress="0"></div>
+                    <div class="progress-fill" data-progress="0" aria-hidden="true"></div>
                 </div>
             </div>
 
             <!-- Step 1: Intelligence Request -->
-            <div class="constructor-step active" data-step="1">
+            <div class="constructor-step active" data-step="1" role="tabpanel" aria-labelledby="step1-title">
                 <div class="step-header">
-                    <h2>🎯 STEP 1: YOUR KEY BUSINESS QUESTION</h2>
-                    <p>Formulate what you want to research</p>
+                    <h2 id="step1-title">🎯 STEP 1: YOUR KEY BUSINESS QUESTION</h2>
+                    <p>Formulate what you want to research - our AI will analyze 200+ data sources</p>
                 </div>
                 
                 <div class="step-content">
                     <div class="quantum-input-field">
+                        <label for="business-question" class="sr-only">Enter your business question</label>
                         <textarea 
                             id="business-question" 
                             placeholder="Example: 'Competition analysis in FinTech market of Eastern Europe'"
                             maxlength="500"
+                            aria-required="true"
+                            aria-describedby="char-counter"
                         ></textarea>
-                        <div class="input-glow"></div>
-                        <div class="char-counter"><span id="char-count">0</span>/500</div>
+                        <div class="input-glow" aria-hidden="true"></div>
+                        <div class="char-counter" id="char-counter"><span id="char-count">0</span>/500 characters</div>
                     </div>
 
                     <div class="quick-presets">
                         <h4>Or select a ready-made template:</h4>
-                        <div class="preset-grid">
-                            <div class="preset-card" data-preset="market-size">
-                                <div class="preset-icon">📊</div>
+                        <div class="preset-grid" role="list" aria-label="Quick start templates">
+                            <div class="preset-card" data-preset="market-size" role="listitem" tabindex="0" aria-label="Market size analysis template">
+                                <div class="preset-icon" aria-hidden="true">📊</div>
                                 <h5>Market Size</h5>
                                 <p>Learn market volume and growth dynamics</p>
                             </div>
-                            <div class="preset-card" data-preset="competitors">
-                                <div class="preset-icon">⚔️</div>
+                            <div class="preset-card" data-preset="competitors" role="listitem" tabindex="0" aria-label="Competitor analysis template">
+                                <div class="preset-icon" aria-hidden="true">⚔️</div>
                                 <h5>Competitor Analysis</h5>
                                 <p>Study players and market shares</p>
                             </div>
-                            <div class="preset-card" data-preset="entry-strategy">
-                                <div class="preset-icon">🚀</div>
+                            <div class="preset-card" data-preset="entry-strategy" role="listitem" tabindex="0" aria-label="Market entry strategy template">
+                                <div class="preset-icon" aria-hidden="true">🚀</div>
                                 <h5>Market Entry Strategy</h5>
                                 <p>Market capture plan</p>
                             </div>
@@ -95,58 +140,59 @@
                 </div>
 
                 <div class="step-actions">
-                    <button class="quantum-btn next-step" data-next="2" disabled>
+                    <button class="quantum-btn next-step" data-next="2" disabled aria-disabled="true">
                         Next ➔
+                        <span class="sr-only">Proceed to analysis depth selection</span>
                     </button>
                 </div>
             </div>
 
             <!-- Step 2: Depth Configuration -->
-            <div class="constructor-step" data-step="2">
+            <div class="constructor-step" data-step="2" role="tabpanel" aria-labelledby="step2-title" hidden>
                 <div class="step-header">
-                    <h2>🔧 STEP 2: ANALYSIS DEPTH CONFIGURATION</h2>
-                    <p>Select the level of report detail</p>
+                    <h2 id="step2-title">🔧 STEP 2: ANALYSIS DEPTH CONFIGURATION</h2>
+                    <p>Select the level of detail and sophistication for your report</p>
                 </div>
 
                 <div class="step-content">
-                    <div class="depth-options">
-                        <div class="depth-option selected" data-depth="strategic">
+                    <div class="depth-options" role="list" aria-label="Analysis depth options">
+                        <div class="depth-option selected" data-depth="strategic" role="listitem" tabindex="0" aria-label="Strategic overview analysis - 3-5 days - $2,500">
                             <div class="depth-header">
                                 <h4>🎯 STRATEGIC OVERVIEW</h4>
                                 <div class="depth-badge">3-5 days</div>
                             </div>
-                            <ul class="depth-features">
-                                <li>• Market size and key trends</li>
-                                <li>• Main players and market shares</li>
-                                <li>• Strategic recommendations</li>
+                            <ul class="depth-features" aria-label="Strategic overview features">
+                                <li>Market size and key trends</li>
+                                <li>Main players and market shares</li>
+                                <li>Strategic recommendations</li>
                             </ul>
                             <div class="depth-price">$2,500</div>
                         </div>
 
-                        <div class="depth-option" data-depth="deep">
+                        <div class="depth-option" data-depth="deep" role="listitem" tabindex="0" aria-label="Deep analysis - 7-10 days - $5,000">
                             <div class="depth-header">
                                 <h4>🔮 DEEP ANALYSIS</h4>
                                 <div class="depth-badge">7-10 days</div>
                             </div>
-                            <ul class="depth-features">
-                                <li>• Detailed market segmentation</li>
-                                <li>• Competitor SWOT analysis</li>
-                                <li>• Customer journey mapping</li>
-                                <li>• 3-year forecasts</li>
+                            <ul class="depth-features" aria-label="Deep analysis features">
+                                <li>Detailed market segmentation</li>
+                                <li>Competitor SWOT analysis</li>
+                                <li>Customer journey mapping</li>
+                                <li>3-year forecasts</li>
                             </ul>
                             <div class="depth-price">$5,000</div>
                         </div>
 
-                        <div class="depth-option" data-depth="quantum">
+                        <div class="depth-option" data-depth="quantum" role="listitem" tabindex="0" aria-label="Quantum research - 14 days - $8,500">
                             <div class="depth-header">
                                 <h4>⚡ QUANTUM RESEARCH</h4>
                                 <div class="depth-badge">14 days</div>
                             </div>
-                            <ul class="depth-features">
-                                <li>• AI trend forecasting</li>
-                                <li>• Scenario modeling</li>
-                                <li>• Risk intelligence matrix</li>
-                                <li>• Personalized strategy</li>
+                            <ul class="depth-features" aria-label="Quantum research features">
+                                <li>AI trend forecasting</li>
+                                <li>Scenario modeling</li>
+                                <li>Risk intelligence matrix</li>
+                                <li>Personalized strategy</li>
                             </ul>
                             <div class="depth-price">$8,500</div>
                         </div>
@@ -154,86 +200,87 @@
                 </div>
 
                 <div class="step-actions">
-                    <button class="quantum-btn ghost prev-step" data-prev="1">
+                    <button class="quantum-btn ghost prev-step" data-prev="1" aria-label="Go back to business question">
                         ← Back
                     </button>
-                    <button class="quantum-btn next-step" data-next="3">
+                    <button class="quantum-btn next-step" data-next="3" aria-label="Proceed to report preview">
                         Next ➔
                     </button>
                 </div>
             </div>
 
             <!-- Step 3: Instant Preview -->
-            <div class="constructor-step" data-step="3">
+            <div class="constructor-step" data-step="3" role="tabpanel" aria-labelledby="step3-title" hidden>
                 <div class="step-header">
-                    <h2>🚀 STEP 3: YOUR REPORT IS BEING PREPARED</h2>
-                    <p>Preview and commercial proposal</p>
+                    <h2 id="step3-title">🚀 STEP 3: YOUR REPORT IS BEING PREPARED</h2>
+                    <p>Preview insights and receive commercial proposal</p>
                 </div>
 
                 <div class="step-content">
                     <div class="preview-container">
-                        <div class="report-preview">
+                        <div class="report-preview" role="article" aria-label="Report preview">
                             <div class="preview-header">
                                 <div class="preview-title">
                                     <h3>MATRIX INTELLIGENCE REPORT</h3>
-                                    <div class="confidential-badge">CONFIDENTIAL</div>
+                                    <div class="confidential-badge" aria-label="Confidential document">CONFIDENTIAL</div>
                                 </div>
                                 <div class="preview-meta">
-                                    <span id="preview-date"></span>
-                                    <span id="preview-client"></span>
+                                    <span id="preview-date" aria-label="Report generation date">Loading date...</span>
+                                    <span id="preview-client" aria-label="Client reference">Confidential Client Data</span>
                                 </div>
                             </div>
 
                             <div class="preview-content">
-                                <div class="live-toc">
-                                    <div class="toc-item completed">
-                                        <span class="toc-icon">📄</span>
+                                <div class="live-toc" role="list" aria-label="Report sections completion status">
+                                    <div class="toc-item completed" role="listitem">
+                                        <span class="toc-icon" aria-hidden="true">📄</span>
                                         <span class="toc-title">Executive Summary</span>
-                                        <div class="completion-badge">100%</div>
+                                        <div class="completion-badge" aria-label="100% complete">100%</div>
                                     </div>
-                                    <div class="toc-item in-progress">
-                                        <span class="toc-icon">📈</span>
+                                    <div class="toc-item in-progress" role="listitem">
+                                        <span class="toc-icon" aria-hidden="true">📈</span>
                                         <span class="toc-title">Market Analysis</span>
-                                        <div class="completion-badge">75%</div>
+                                        <div class="completion-badge" aria-label="75% complete">75%</div>
                                     </div>
-                                    <div class="toc-item pending">
-                                        <span class="toc-icon">⚔️</span>
+                                    <div class="toc-item pending" role="listitem">
+                                        <span class="toc-icon" aria-hidden="true">⚔️</span>
                                         <span class="toc-title">Competitive Landscape</span>
-                                        <div class="completion-badge">50%</div>
+                                        <div class="completion-badge" aria-label="50% complete">50%</div>
                                     </div>
                                 </div>
 
-                                <div class="key-insight-preview">
+                                <div class="key-insight-preview" aria-live="polite" aria-atomic="true">
                                     <h4>🔍 FIRST INSIGHT READY:</h4>
                                     <div class="insight-content" id="dynamic-insight">
                                         <!-- AI-generated insight will appear here -->
+                                        <div class="loading-pulse" aria-label="Generating insights">Analyzing market patterns...</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="proposal-sidebar">
-                            <div class="proposal-card">
+                            <div class="proposal-card" role="complementary" aria-label="Commercial proposal">
                                 <h4>💼 COMMERCIAL PROPOSAL</h4>
-                                <div class="proposal-details">
-                                    <div class="proposal-item">
+                                <div class="proposal-details" role="list" aria-label="Proposal details">
+                                    <div class="proposal-item" role="listitem">
                                         <span>Analysis level:</span>
                                         <span id="proposal-depth">Strategic Overview</span>
                                     </div>
-                                    <div class="proposal-item">
+                                    <div class="proposal-item" role="listitem">
                                         <span>Delivery time:</span>
                                         <span id="proposal-timeline">3-5 days</span>
                                     </div>
-                                    <div class="proposal-item">
+                                    <div class="proposal-item" role="listitem">
                                         <span>Investment:</span>
                                         <span id="proposal-price">$2,500</span>
                                     </div>
                                 </div>
-                                <div class="proposal-actions">
-                                    <button class="quantum-btn full-width" id="generate-proposal">
+                                <div class="proposal-actions" role="group" aria-label="Proposal actions">
+                                    <button class="quantum-btn full-width" id="generate-proposal" aria-label="Generate full commercial proposal">
                                         📧 GET FULL PROPOSAL
                                     </button>
-                                    <button class="quantum-btn ghost full-width" id="expert-consult">
+                                    <button class="quantum-btn ghost full-width" id="expert-consult" aria-label="Consult with market intelligence expert">
                                         💬 CONSULT WITH EXPERT
                                     </button>
                                 </div>
@@ -243,10 +290,10 @@
                 </div>
 
                 <div class="step-actions">
-                    <button class="quantum-btn ghost prev-step" data-prev="2">
+                    <button class="quantum-btn ghost prev-step" data-prev="2" aria-label="Go back to analysis depth selection">
                         ← Back
                     </button>
-                    <button class="quantum-btn" id="restart-constructor">
+                    <button class="quantum-btn" id="restart-constructor" aria-label="Start new report creation">
                         🔄 NEW REPORT
                     </button>
                 </div>
@@ -254,10 +301,101 @@
         </section>
     </div>
 
+    <!-- Hidden elements for screen readers -->
+    <div class="sr-only" aria-live="polite" aria-atomic="true">
+        <div id="step-announcement"></div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="js/utils.js"></script>
     <script src="js/quantum-constructor.js"></script>
     <script src="js/cost-calculator.js"></script>
     <script src="js/preview-engine.js"></script>
     <script src="js/proposal-generator.js"></script>
+
+    <!-- Inline critical CSS for above-the-fold content -->
+    <style>
+        /* Critical CSS for initial load */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--matrix-accent);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            color: var(--matrix-text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        /* Ensure no FOUC */
+        .matrix-constructor {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .matrix-constructor.loading {
+            opacity: 0;
+        }
+    </style>
+
+    <!-- Noscript fallback -->
+    <noscript>
+        <style>
+            .matrix-constructor {
+                display: block !important;
+            }
+            .quantum-hero {
+                display: flex !important;
+            }
+            #constructor-section {
+                display: none !important;
+            }
+        </style>
+        <div class="no-js-warning" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--matrix-error);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            z-index: 10000;
+        ">
+            ⚠️ JavaScript is required for the Matrix Intelligence Constructor. Please enable JavaScript to continue.
+        </div>
+    </noscript>
 </body>
 </html>

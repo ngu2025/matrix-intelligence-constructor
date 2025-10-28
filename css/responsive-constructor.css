@@ -1,281 +1,469 @@
-/* MATRIX INTELLIGENCE RESPONSIVE CONSTRUCTOR */
-/* Mobile-first responsive design */
+/* MATRIX INTELLIGENCE RESPONSIVE CONSTRUCTOR - ENHANCED */
+/* Ultimate mobile-first responsive design */
 
-/* Base Mobile Styles */
+/* Base Mobile Styles - ENHANCED */
 @media (max-width: 767px) {
     .matrix-constructor {
         padding: 1rem;
         min-height: 100vh;
+        overflow-x: hidden;
     }
 
     .quantum-hero {
-        min-height: 60vh;
+        min-height: 70vh;
         padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .quantum-hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 1.2;
         margin-bottom: 1rem;
+        text-align: center;
+        background: linear-gradient(135deg, #00dc82 0%, #00b4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .logo-subtitle {
-        font-size: 1rem;
-        letter-spacing: 0.2em;
-        margin-top: -0.25rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.15em;
+        margin-top: -0.5rem;
+        text-align: center;
+        display: block;
     }
 
     .hero-tagline {
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
+        font-size: 1.15rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        line-height: 1.5;
+        color: var(--matrix-text-secondary);
     }
 
     .cta-pulse-button {
-        padding: 1.25rem 2rem;
-        font-size: 1.1rem;
+        padding: 1.3rem 2.5rem;
+        font-size: 1.15rem;
         width: 100%;
-        max-width: 300px;
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
     }
 
-    /* Progress Steps Mobile */
+    /* Enhanced Progress Steps Mobile */
+    .construction-progress {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
     .progress-steps {
-        gap: 1rem;
+        gap: 1.5rem;
         margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .step-indicator {
         gap: 0.5rem;
+        min-width: 80px;
     }
 
     .step-number {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 0.9rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+        border-width: 2px;
     }
 
     .step-label {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         text-align: center;
+        font-weight: 600;
     }
 
     .progress-bar {
-        max-width: 250px;
+        max-width: 280px;
+        height: 6px;
     }
 
-    /* Step Content Mobile */
+    /* Enhanced Step Content Mobile */
     .step-content {
-        padding: 1.5rem 1rem;
-        margin-bottom: 1.5rem;
-        border-radius: 12px;
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 16px;
+        margin: 1rem 0.5rem 2rem;
+    }
+
+    .step-header {
+        margin-bottom: 2rem;
     }
 
     .step-header h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.75rem;
+        text-align: center;
     }
 
     .step-header p {
-        font-size: 1rem;
+        font-size: 1.05rem;
+        text-align: center;
+        color: var(--matrix-text-secondary);
     }
 
-    /* Preset Grid Mobile */
+    /* Enhanced Preset Grid Mobile */
+    .quick-presets {
+        margin-top: 2.5rem;
+    }
+
+    .quick-presets h4 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+
     .preset-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.25rem;
     }
 
     .preset-card {
-        padding: 1.25rem;
+        padding: 1.75rem 1.5rem;
+        border-radius: 16px;
+        transition: all 0.3s var(--quantum-ease);
     }
 
     .preset-icon {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
     }
 
     .preset-card h5 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
     }
 
-    /* Depth Options Mobile */
+    .preset-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Enhanced Depth Options Mobile */
     .depth-options {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.75rem;
     }
 
     .depth-option {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+        border-width: 2px;
     }
 
     .depth-header {
         flex-direction: column;
         gap: 1rem;
         align-items: flex-start;
+        margin-bottom: 1.5rem;
     }
 
     .depth-header h4 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-right: 0;
+        line-height: 1.3;
     }
 
     .depth-badge {
         align-self: flex-start;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .depth-features {
+        margin-bottom: 2rem;
+    }
+
+    .depth-features li {
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        line-height: 1.4;
     }
 
     .depth-price {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        font-weight: 800;
     }
 
-    /* Preview Container Mobile */
+    /* Enhanced Preview Container Mobile */
     .preview-container {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .preview-header {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
     .preview-title {
         flex-direction: column;
         gap: 1rem;
         align-items: flex-start;
+        text-align: center;
     }
 
     .preview-title h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        text-align: center;
+        width: 100%;
     }
 
     .preview-meta {
         flex-direction: column;
         gap: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 100%;
     }
 
     .preview-content {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
-    /* TOC Mobile */
+    /* Enhanced TOC Mobile */
+    .live-toc {
+        margin-bottom: 2.5rem;
+    }
+
     .toc-item {
-        padding: 0.875rem;
+        padding: 1.25rem;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.75rem;
         text-align: center;
+        border-radius: 12px;
+        margin-bottom: 0.75rem;
     }
 
     .toc-icon {
         margin-right: 0;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+    }
+
+    .toc-title {
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 
     .completion-badge {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.6rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
     }
 
-    /* Proposal Sidebar Mobile */
+    /* Enhanced Proposal Sidebar Mobile */
     .proposal-sidebar {
         position: static;
+        order: -1; /* Move to top on mobile */
     }
 
     .proposal-card {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .proposal-card h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 
     .proposal-item {
-        padding: 0.75rem 0;
+        padding: 1rem 0;
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 0.5rem;
         align-items: flex-start;
+        border-bottom: 1px solid var(--matrix-border);
     }
 
-    /* Step Actions Mobile */
+    .proposal-item:last-child {
+        border-bottom: none;
+    }
+
+    .proposal-actions {
+        gap: 1rem;
+    }
+
+    /* Enhanced Step Actions Mobile */
     .step-actions {
-        flex-direction: column;
-        gap: 0.75rem;
+        flex-direction: column-reverse; /* Back button first on mobile */
+        gap: 1rem;
+        padding: 0 0.5rem;
     }
 
     .step-actions .quantum-btn {
         width: 100%;
-        order: 2;
+        padding: 1.25rem 2rem;
+        font-size: 1.1rem;
     }
 
     .step-actions .quantum-btn.ghost {
+        order: 2;
+    }
+
+    .step-actions .quantum-btn:not(.ghost) {
         order: 1;
     }
 
-    /* Input Fields Mobile */
+    /* Enhanced Input Fields Mobile */
+    .quantum-input-field {
+        margin-bottom: 2.5rem;
+    }
+
     .quantum-input-field textarea {
-        min-height: 100px;
-        padding: 1rem;
-        font-size: 1rem;
+        min-height: 140px;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 16px;
+        line-height: 1.5;
     }
 
     .char-counter {
         position: static;
         text-align: right;
-        margin-top: 0.5rem;
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Enhanced Insight Cards Mobile */
+    .key-insight-preview {
+        padding: 1.75rem;
+        border-radius: 16px;
+        margin-top: 2rem;
+    }
+
+    .key-insight-preview h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .insight-content {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    /* Mobile-specific touch improvements */
+    .quantum-btn,
+    .preset-card,
+    .depth-option {
+        min-height: 54px; /* Larger touch targets */
+        cursor: pointer;
+    }
+
+    /* Mobile navigation enhancements */
+    .constructor-step {
+        padding-bottom: 2rem;
     }
 }
 
-/* Tablet Styles */
+/* Enhanced Tablet Styles */
 @media (min-width: 768px) and (max-width: 1023px) {
     .matrix-constructor {
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     .quantum-hero h1 {
-        font-size: 2.75rem;
+        font-size: 3rem;
     }
 
     .preset-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
     .depth-options {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
     .depth-option:nth-child(3) {
         grid-column: 1 / -1;
-        max-width: 400px;
+        max-width: 450px;
         justify-self: center;
     }
 
     .preview-container {
         grid-template-columns: 1.5fr 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .progress-steps {
         gap: 3rem;
     }
-}
 
-/* Small Mobile Devices */
-@media (max-width: 374px) {
-    .quantum-hero h1 {
-        font-size: 1.75rem;
+    .step-content {
+        padding: 3rem 2.5rem;
     }
 
-    .step-header h2 {
-        font-size: 1.3rem;
-    }
-
-    .depth-option {
-        padding: 1.25rem;
-    }
-
-    .depth-header h4 {
+    /* Tablet-specific optimizations */
+    .quantum-input-field textarea {
+        min-height: 120px;
         font-size: 1.1rem;
     }
 
-    .preset-card {
-        padding: 1rem;
+    .preset-card,
+    .depth-option {
+        transition: all 0.3s var(--quantum-ease);
+    }
+
+    .preset-card:hover,
+    .depth-option:hover {
+        transform: translateY(-5px);
     }
 }
 
-/* Landscape Mobile Optimization */
+/* Enhanced Small Mobile Devices */
+@media (max-width: 374px) {
+    .matrix-constructor {
+        padding: 0.75rem;
+    }
+
+    .quantum-hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .step-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .depth-option {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .depth-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .preset-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .preset-card h5 {
+        font-size: 1.2rem;
+    }
+
+    .progress-steps {
+        gap: 1rem;
+    }
+
+    .step-number {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+}
+
+/* Enhanced Landscape Mobile Optimization */
 @media (max-height: 600px) and (orientation: landscape) {
     .quantum-hero {
         min-height: 100vh;
@@ -283,28 +471,45 @@
     }
 
     .quantum-hero h1 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
         margin-bottom: 0.5rem;
     }
 
     .hero-tagline {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .step-content {
-        padding: 1rem;
-        margin-bottom: 1rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .preset-grid,
     .depth-options {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
+        gap: 1rem;
+    }
+
+    .quantum-input-field textarea {
+        min-height: 80px;
+    }
+
+    /* Compact mode for landscape */
+    .construction-progress {
+        margin-bottom: 1.5rem;
+    }
+
+    .step-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .step-header h2 {
+        font-size: 1.4rem;
     }
 }
 
-/* High-DPI Displays */
+/* Enhanced High-DPI Displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .quantum-input-field textarea {
         border-width: 1.5px;
@@ -313,44 +518,79 @@
     .depth-option {
         border-width: 1.5px;
     }
+    
+    .preset-card {
+        border-width: 1.5px;
+    }
+    
+    /* Crisper text rendering */
+    .quantum-hero h1 {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }
 
-/* Reduced Motion Support */
+/* Enhanced Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+    
+    /* Keep essential transitions */
+    .quantum-input-field textarea:focus,
+    .quantum-btn:active {
+        transition-duration: 100ms !important;
+    }
 }
 
-/* Dark Mode Support (already dark, but for consistency) */
+/* Enhanced Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     .matrix-constructor {
         background: var(--matrix-bg);
     }
+    
+    /* Ensure contrast in dark mode */
+    .step-content,
+    .proposal-card,
+    .preset-card,
+    .depth-option {
+        background: var(--matrix-card);
+        color: var(--matrix-text);
+    }
 }
 
-/* Print Styles */
+/* Enhanced Print Styles */
 @media print {
     .matrix-constructor {
-        background: white;
-        color: black;
+        background: white !important;
+        color: black !important;
+        padding: 0 !important;
     }
     
     .quantum-btn,
     .cta-pulse-button,
-    .step-actions {
+    .step-actions,
+    .construction-progress {
         display: none !important;
     }
     
     .constructor-step.active {
         display: block !important;
         break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .step-content {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        background: white !important;
+        color: black !important;
     }
 }
 
-/* Touch Device Optimizations */
+/* Enhanced Touch Device Optimizations */
 @media (hover: none) and (pointer: coarse) {
     .quantum-btn:hover {
         transform: none;
@@ -366,41 +606,64 @@
     .depth-option:active {
         transform: scale(0.98);
         border-color: var(--matrix-accent);
+        background: rgba(0, 220, 130, 0.05);
     }
     
-    /* Larger touch targets */
+    /* Enhanced touch feedback */
+    .quantum-btn:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+    
+    /* Larger touch targets for mobile */
     .quantum-btn,
     .preset-card,
     .depth-option {
-        min-height: 44px;
+        min-height: 54px;
     }
     
     .step-number {
-        width: 44px;
-        height: 44px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Improved scrolling */
+    .step-content {
+        -webkit-overflow-scrolling: touch;
     }
 }
 
-/* Foldable Devices */
+/* Enhanced Foldable Devices Support */
 @media (max-width: 350px) {
     .matrix-constructor {
-        padding: 0.75rem;
+        padding: 0.5rem;
     }
     
     .quantum-hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     
     .step-content {
-        padding: 1rem 0.75rem;
+        padding: 1.25rem 1rem;
+        margin: 0.5rem 0.25rem 1.5rem;
+    }
+    
+    .preset-card,
+    .depth-option {
+        padding: 1.25rem 1rem;
+    }
+    
+    .progress-steps {
+        gap: 0.75rem;
     }
 }
 
-/* Large Desktop Screens */
+/* Enhanced Large Desktop Screens */
 @media (min-width: 1440px) {
     .matrix-constructor {
         max-width: 1400px;
         margin: 0 auto;
+        padding: 3rem 2rem;
     }
     
     .constructor-flow {
@@ -416,19 +679,97 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-}
-
-/* Ultra-wide Screens */
-@media (min-width: 2000px) {
-    .matrix-constructor {
-        max-width: 1800px;
-    }
     
     .step-content {
-        padding: 4rem;
+        padding: 4rem 3rem;
     }
     
     .quantum-hero h1 {
         font-size: 4rem;
+    }
+    
+    /* Enhanced spacing for large screens */
+    .construction-progress {
+        margin-bottom: 4rem;
+    }
+    
+    .step-header {
+        margin-bottom: 3rem;
+    }
+}
+
+/* Enhanced Ultra-wide Screens */
+@media (min-width: 2000px) {
+    .matrix-constructor {
+        max-width: 1800px;
+        padding: 4rem 3rem;
+    }
+    
+    .step-content {
+        padding: 5rem 4rem;
+        border-radius: 24px;
+    }
+    
+    .quantum-hero h1 {
+        font-size: 4.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+    
+    /* Scale up elements for ultra-wide */
+    .preset-card,
+    .depth-option {
+        padding: 3rem 2.5rem;
+    }
+    
+    .quantum-btn {
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        border-radius: 16px;
+    }
+}
+
+/* Enhanced Accessibility Features */
+@media (prefers-reduced-transparency: reduce) {
+    .glass-card {
+        background: var(--matrix-card);
+        backdrop-filter: none;
+    }
+    
+    #quantum-particles::before,
+    #quantum-particles::after {
+        opacity: 0.3;
+    }
+}
+
+/* Enhanced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+    .cta-pulse-button {
+        animation: none;
+    }
+    
+    .progress-fill::after {
+        animation: none;
+    }
+    
+    .step-indicator.active .step-number {
+        animation: none;
+    }
+}
+
+/* Enhanced Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --matrix-border: #000000;
+        --matrix-text: #000000;
+        --matrix-bg: #ffffff;
+    }
+    
+    .quantum-hero h1 {
+        background: linear-gradient(135deg, #000000 0%, #333333 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

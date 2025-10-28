@@ -1,7 +1,7 @@
-/* MATRIX INTELLIGENCE QUANTUM EFFECTS */
-/* Advanced Animations and Visual Effects */
+/* MATRIX INTELLIGENCE QUANTUM EFFECTS - ENHANCED */
+/* Complete animation system for seamless UX */
 
-/* Quantum Particles Background */
+/* Enhanced Quantum Particles Background */
 #quantum-particles {
     position: fixed;
     top: 0;
@@ -21,9 +21,9 @@
     width: 100%;
     height: 100%;
     background-image: 
-        radial-gradient(circle at 20% 80%, rgba(0, 220, 130, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(0, 180, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(0, 220, 130, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(0, 220, 130, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 180, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(0, 220, 130, 0.08) 0%, transparent 50%);
     animation: quantumFloat 20s ease-in-out infinite;
 }
 
@@ -39,7 +39,7 @@
     }
 }
 
-/* Quantum Grid Pattern */
+/* Enhanced Grid Pattern with Movement */
 #quantum-particles::after {
     content: '';
     position: absolute;
@@ -51,7 +51,7 @@
         linear-gradient(rgba(0, 220, 130, 0.1) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 220, 130, 0.1) 1px, transparent 1px);
     background-size: 50px 50px;
-    animation: matrixScroll 20s linear infinite;
+    animation: matrixScroll 30s linear infinite;
     transform-origin: 0 0;
 }
 
@@ -64,111 +64,72 @@
     }
 }
 
-/* Quantum Glow Effects */
-.quantum-glow {
-    position: relative;
+/* Step Transition Animations - ENHANCED */
+.constructor-step {
+    transition: all 0.3s var(--quantum-ease);
 }
 
-.quantum-glow::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #00dc82, #00b4ff, #00dc82);
-    border-radius: inherit;
-    z-index: -1;
+.step-transition-enter {
     opacity: 0;
-    transition: opacity 0.3s var(--quantum-ease);
+    transform: translateX(50px) scale(0.95);
 }
 
-.quantum-glow:hover::before {
-    opacity: 0.6;
-    animation: quantumPulseGlow 2s var(--quantum-ease) infinite;
+.step-transition-enter-active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transition: all 0.5s var(--quantum-ease);
 }
 
-@keyframes quantumPulseGlow {
-    0%, 100% {
-        opacity: 0.6;
-        filter: blur(10px);
-    }
-    50% {
-        opacity: 0.8;
-        filter: blur(15px);
-    }
+.step-transition-exit {
+    opacity: 1;
+    transform: translateX(0) scale(1);
 }
 
-/* Matrix Text Reveal */
-.matrix-gradient {
-    background: linear-gradient(135deg, #00dc82 0%, #00b4ff 50%, #00dc82 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: matrixShine 3s linear infinite;
+.step-transition-exit-active {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.95);
+    transition: all 0.5s var(--quantum-ease);
 }
 
-@keyframes matrixShine {
-    to {
-        background-position: 200% center;
-    }
-}
-
-/* Quantum Button Hover Effects */
+/* Enhanced Button Hover Effects */
 .quantum-btn {
     position: relative;
     overflow: hidden;
+    transition: all 0.4s var(--quantum-ease);
 }
 
-.quantum-btn::after {
+.quantum-btn::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     width: 0;
     height: 0;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
     transform: translate(-50%, -50%);
-    transition: width 0.6s var(--quantum-ease), height 0.6s var(--quantum-ease);
+    transition: all 0.6s var(--quantum-ease);
 }
 
-.quantum-btn:hover::after {
+.quantum-btn:hover::before {
     width: 300px;
     height: 300px;
 }
 
-/* Step Transition Animations */
-.step-transition-enter {
-    opacity: 0;
-    transform: translateX(50px);
+.quantum-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 0 30px var(--matrix-glow);
 }
 
-.step-transition-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: all 0.5s var(--quantum-ease);
-}
-
-.step-transition-exit {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.step-transition-exit-active {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: all 0.5s var(--quantum-ease);
-}
-
-/* Depth Option Selection Animation */
-.depth-option {
+/* Enhanced Card Interactions */
+.preset-card, .depth-option {
+    transition: all 0.4s var(--quantum-ease);
     position: relative;
     overflow: hidden;
 }
 
-.depth-option::after {
+.preset-card::before, .depth-option::before {
     content: '';
     position: absolute;
     top: 0;
@@ -179,14 +140,50 @@
     transition: left 0.6s var(--quantum-ease);
 }
 
-.depth-option.selected::after {
+.preset-card:hover::before, .depth-option:hover::before {
     left: 100%;
 }
 
-/* Progress Bar Animation */
+.preset-card:hover, .depth-option:hover {
+    transform: translateY(-8px);
+    border-color: var(--matrix-accent);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        0 0 25px var(--matrix-glow);
+}
+
+/* Selection Animation */
+.preset-card.selected, .depth-option.selected {
+    animation: quantumSelection 0.6s var(--quantum-bounce);
+    border-color: var(--matrix-accent);
+    box-shadow: 
+        0 0 0 3px rgba(0, 220, 130, 0.2),
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        0 0 30px var(--matrix-glow);
+}
+
+@keyframes quantumSelection {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 220, 130, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(0, 220, 130, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 
+            0 0 0 3px rgba(0, 220, 130, 0.2),
+            0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Enhanced Progress Bar */
 .progress-fill {
     position: relative;
     overflow: hidden;
+    transition: width 0.8s var(--quantum-ease);
 }
 
 .progress-fill::after {
@@ -196,7 +193,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
     animation: progressShine 2s var(--quantum-ease) infinite;
 }
 
@@ -209,12 +206,39 @@
     }
 }
 
-/* Input Field Focus Effects */
+/* Step Indicator Animations */
+.step-indicator {
+    transition: all 0.4s var(--quantum-ease);
+}
+
+.step-indicator.active .step-number {
+    animation: stepPulse 2s var(--quantum-ease) infinite;
+}
+
+@keyframes stepPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 0 0 rgba(0, 220, 130, 0.7),
+            var(--matrix-glow-shadow);
+    }
+    50% {
+        box-shadow: 
+            0 0 0 10px rgba(0, 220, 130, 0),
+            var(--matrix-glow-shadow);
+    }
+}
+
+.step-indicator.completed .step-number {
+    background: linear-gradient(135deg, var(--matrix-success) 0%, #10b981 100%);
+    animation: none;
+}
+
+/* Input Field Enhancements */
 .quantum-input-field {
     position: relative;
 }
 
-.quantum-input-field::before {
+.quantum-input-field::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -222,147 +246,43 @@
     width: 0;
     height: 2px;
     background: linear-gradient(90deg, var(--matrix-accent), #00b4ff);
-    transition: all 0.3s var(--quantum-ease);
+    transition: all 0.4s var(--quantum-ease);
     transform: translateX(-50%);
 }
 
-.quantum-input-field:focus-within::before {
+.quantum-input-field:focus-within::after {
     width: 100%;
 }
 
-/* Preset Card Hover Effects */
-.preset-card {
-    position: relative;
-}
-
-.preset-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: inherit;
-    padding: 2px;
-    background: linear-gradient(135deg, var(--matrix-accent), #00b4ff, var(--matrix-accent));
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: subtract;
-    -webkit-mask-composite: xor;
-    opacity: 0;
-    transition: opacity 0.3s var(--quantum-ease);
-}
-
-.preset-card:hover::before {
-    opacity: 1;
-    animation: borderRotate 3s linear infinite;
-}
-
-@keyframes borderRotate {
-    to {
-        background-position: 200% center;
-    }
-}
-
-/* Completion Badge Animation */
-.completion-badge {
-    position: relative;
-    overflow: hidden;
-}
-
-.completion-badge::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.6s var(--quantum-ease);
-}
-
-.toc-item.completed .completion-badge::before {
-    left: 100%;
-}
-
-/* Confidential Badge Pulse */
-.confidential-badge {
-    position: relative;
-    animation: confidentialPulse 2s var(--quantum-ease) infinite;
-}
-
-@keyframes confidentialPulse {
-    0%, 100% {
-        box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
-    }
-    50% {
-        box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
-    }
-}
-
-/* Quantum Reveal Animation */
-@keyframes quantumReveal {
-    0% {
-        opacity: 0;
-        transform: scale(0.8) rotateX(-10deg);
-        filter: blur(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotateX(0);
-        filter: blur(0);
-    }
-}
-
-.quantum-reveal {
-    animation: quantumReveal 0.8s var(--quantum-bounce) forwards;
-}
-
-/* Loading Animation for Preview */
-.insight-content:empty::after {
-    content: 'Generating quantum insights...';
-    color: var(--matrix-text-secondary);
-    font-style: italic;
-    animation: loadingPulse 1.5s var(--quantum-ease) infinite;
-}
-
-@keyframes loadingPulse {
-    0%, 100% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
-/* Hover Lift Effect */
-.hover-lift {
-    transition: transform 0.3s var(--quantum-ease), box-shadow 0.3s var(--quantum-ease);
-}
-
-.hover-lift:hover {
-    transform: translateY(-5px);
+.quantum-input-field textarea:focus {
+    transform: translateY(-2px);
     box-shadow: 
-        0 10px 25px rgba(0, 0, 0, 0.3),
-        0 0 30px var(--matrix-glow);
+        0 5px 15px rgba(0, 0, 0, 0.2),
+        var(--matrix-glow-shadow);
 }
 
-/* Quantum Fade In */
-.quantum-fade-in {
-    animation: quantumFadeIn 1s var(--quantum-ease) forwards;
+/* Insight Card Animations */
+.insight-card {
+    animation: insightReveal 0.8s var(--quantum-bounce) forwards;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
 }
 
-@keyframes quantumFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+@keyframes insightReveal {
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
-/* Staggered Animation for Lists */
+.insight-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 35px var(--matrix-glow);
+}
+
+/* Staggered Animations for Lists */
 .stagger-item {
     opacity: 0;
     transform: translateY(20px);
@@ -376,7 +296,7 @@
     }
 }
 
-/* Apply staggered animation with delays */
+/* Apply staggered delays */
 .depth-options .depth-option:nth-child(1) { animation-delay: 0.1s; }
 .depth-options .depth-option:nth-child(2) { animation-delay: 0.2s; }
 .depth-options .depth-option:nth-child(3) { animation-delay: 0.3s; }
@@ -385,25 +305,120 @@
 .preset-grid .preset-card:nth-child(2) { animation-delay: 0.2s; }
 .preset-grid .preset-card:nth-child(3) { animation-delay: 0.3s; }
 
-/* Quantum Vibration for Errors */
-@keyframes quantumVibration {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-2px); }
-    75% { transform: translateX(2px); }
+.toc-item:nth-child(1) { animation-delay: 0.1s; }
+.toc-item:nth-child(2) { animation-delay: 0.2s; }
+.toc-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* Enhanced Loading States */
+.loading-pulse {
+    animation: pulseGlow 2s var(--quantum-ease) infinite;
+    position: relative;
 }
 
-.quantum-error {
-    animation: quantumVibration 0.3s var(--quantum-ease);
-    border-color: var(--matrix-error) !important;
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.7;
+        text-shadow: 0 0 10px var(--matrix-glow);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 20px var(--matrix-glow);
+    }
 }
 
-/* Success Celebration */
-@keyframes quantumCelebration {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
+/* Success States */
 .quantum-success {
-    animation: quantumCelebration 0.6s var(--quantum-bounce);
+    animation: successCelebration 0.8s var(--quantum-bounce);
+}
+
+@keyframes successCelebration {
+    0% {
+        transform: scale(1);
+        background: linear-gradient(135deg, var(--matrix-accent) 0%, #00b4ff 100%);
+    }
+    25% {
+        transform: scale(1.1) rotate(5deg);
+        background: var(--matrix-success);
+    }
+    50% {
+        transform: scale(1.05) rotate(-5deg);
+        background: var(--matrix-success);
+    }
+    75% {
+        transform: scale(1.1) rotate(5deg);
+        background: var(--matrix-success);
+    }
+    100% {
+        transform: scale(1);
+        background: linear-gradient(135deg, var(--matrix-accent) 0%, #00b4ff 100%);
+    }
+}
+
+/* Error States */
+.quantum-error {
+    animation: errorVibration 0.5s var(--quantum-ease);
+}
+
+@keyframes errorVibration {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(3px); }
+}
+
+/* Hero Section Enhancements */
+.quantum-hero {
+    animation: heroEntrance 1.2s var(--quantum-ease) forwards;
+}
+
+@keyframes heroEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* CTA Button Special Effects */
+.cta-pulse-button {
+    animation: ctaPulse 3s var(--quantum-ease) infinite;
+}
+
+@keyframes ctaPulse {
+    0%, 100% {
+        transform: translateY(0);
+        box-shadow: 
+            0 0 0 0 rgba(0, 220, 130, 0.7),
+            var(--matrix-glow-shadow);
+    }
+    50% {
+        transform: translateY(-5px);
+        box-shadow: 
+            0 0 0 15px rgba(0, 220, 130, 0),
+            var(--matrix-glow-shadow);
+    }
+}
+
+/* Responsive Animation Adjustments */
+@media (max-width: 768px) {
+    .preset-card:hover, .depth-option:hover {
+        transform: translateY(-3px);
+    }
+    
+    .quantum-btn:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
