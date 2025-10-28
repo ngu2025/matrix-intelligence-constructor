@@ -1,0 +1,434 @@
+/* MATRIX INTELLIGENCE RESPONSIVE CONSTRUCTOR */
+/* Mobile-first responsive design */
+
+/* Base Mobile Styles */
+@media (max-width: 767px) {
+    .matrix-constructor {
+        padding: 1rem;
+        min-height: 100vh;
+    }
+
+    .quantum-hero {
+        min-height: 60vh;
+        padding: 2rem 0;
+    }
+
+    .quantum-hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .logo-subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        margin-top: -0.25rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-pulse-button {
+        padding: 1.25rem 2rem;
+        font-size: 1.1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Progress Steps Mobile */
+    .progress-steps {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .step-indicator {
+        gap: 0.5rem;
+    }
+
+    .step-number {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .step-label {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .progress-bar {
+        max-width: 250px;
+    }
+
+    /* Step Content Mobile */
+    .step-content {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .step-header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .step-header p {
+        font-size: 1rem;
+    }
+
+    /* Preset Grid Mobile */
+    .preset-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .preset-card {
+        padding: 1.25rem;
+    }
+
+    .preset-icon {
+        font-size: 2rem;
+    }
+
+    .preset-card h5 {
+        font-size: 1.1rem;
+    }
+
+    /* Depth Options Mobile */
+    .depth-options {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .depth-option {
+        padding: 1.5rem;
+    }
+
+    .depth-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .depth-header h4 {
+        font-size: 1.3rem;
+        margin-right: 0;
+    }
+
+    .depth-badge {
+        align-self: flex-start;
+    }
+
+    .depth-price {
+        font-size: 1.75rem;
+    }
+
+    /* Preview Container Mobile */
+    .preview-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .preview-header {
+        padding: 1.5rem;
+    }
+
+    .preview-title {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .preview-title h3 {
+        font-size: 1.3rem;
+    }
+
+    .preview-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .preview-content {
+        padding: 1.5rem;
+    }
+
+    /* TOC Mobile */
+    .toc-item {
+        padding: 0.875rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .toc-icon {
+        margin-right: 0;
+        font-size: 1.5rem;
+    }
+
+    .completion-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    /* Proposal Sidebar Mobile */
+    .proposal-sidebar {
+        position: static;
+    }
+
+    .proposal-card {
+        padding: 1.5rem;
+    }
+
+    .proposal-item {
+        padding: 0.75rem 0;
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: flex-start;
+    }
+
+    /* Step Actions Mobile */
+    .step-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .step-actions .quantum-btn {
+        width: 100%;
+        order: 2;
+    }
+
+    .step-actions .quantum-btn.ghost {
+        order: 1;
+    }
+
+    /* Input Fields Mobile */
+    .quantum-input-field textarea {
+        min-height: 100px;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .char-counter {
+        position: static;
+        text-align: right;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .matrix-constructor {
+        padding: 1.5rem;
+    }
+
+    .quantum-hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .preset-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .depth-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .depth-option:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        justify-self: center;
+    }
+
+    .preview-container {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .progress-steps {
+        gap: 3rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 374px) {
+    .quantum-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .step-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .depth-option {
+        padding: 1.25rem;
+    }
+
+    .depth-header h4 {
+        font-size: 1.1rem;
+    }
+
+    .preset-card {
+        padding: 1rem;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 600px) and (orientation: landscape) {
+    .quantum-hero {
+        min-height: 100vh;
+        padding: 1rem 0;
+    }
+
+    .quantum-hero h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .step-content {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .preset-grid,
+    .depth-options {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+/* High-DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .quantum-input-field textarea {
+        border-width: 1.5px;
+    }
+    
+    .depth-option {
+        border-width: 1.5px;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support (already dark, but for consistency) */
+@media (prefers-color-scheme: dark) {
+    .matrix-constructor {
+        background: var(--matrix-bg);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .matrix-constructor {
+        background: white;
+        color: black;
+    }
+    
+    .quantum-btn,
+    .cta-pulse-button,
+    .step-actions {
+        display: none !important;
+    }
+    
+    .constructor-step.active {
+        display: block !important;
+        break-inside: avoid;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .quantum-btn:hover {
+        transform: none;
+    }
+    
+    .preset-card:hover,
+    .depth-option:hover {
+        transform: none;
+        border-color: var(--matrix-border);
+    }
+    
+    .preset-card:active,
+    .depth-option:active {
+        transform: scale(0.98);
+        border-color: var(--matrix-accent);
+    }
+    
+    /* Larger touch targets */
+    .quantum-btn,
+    .preset-card,
+    .depth-option {
+        min-height: 44px;
+    }
+    
+    .step-number {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* Foldable Devices */
+@media (max-width: 350px) {
+    .matrix-constructor {
+        padding: 0.75rem;
+    }
+    
+    .quantum-hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .step-content {
+        padding: 1rem 0.75rem;
+    }
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1440px) {
+    .matrix-constructor {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .constructor-flow {
+        max-width: 1300px;
+    }
+    
+    .depth-options {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .preset-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Ultra-wide Screens */
+@media (min-width: 2000px) {
+    .matrix-constructor {
+        max-width: 1800px;
+    }
+    
+    .step-content {
+        padding: 4rem;
+    }
+    
+    .quantum-hero h1 {
+        font-size: 4rem;
+    }
+}
